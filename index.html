@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/styling/style.css">
+    <script type="text/javascript" src="./assets/script/static.js"></script>
+    <link rel="shortcut icon" href="./assets/img/img.svg" type="image/x-icon">
+    <title>Authoj | Book Collection</title>
+</head>
+
+<body>
+
+    <!-- detail container -->
+    <div class="detail-container" id="detail-view">
+        <div class="detail-view">
+            <div class="detail-nav">
+                <a href="javascript:void(0)" id="close" onclick="closeView()">&times;</a>
+                <a href="#" id="fav">
+                    <i class="fas fa-heart"></i>
+                </a>
+            </div>
+            <div class="content">
+                <span>
+                    <h4>Book Name</h4>
+                    <p>Lorem Ipsum</p>
+                </span>
+                <span>
+                    <h4>Author</h4>
+                    <p>Johan</p>
+                </span>
+                <span>
+                    <h4>Genres</h4>
+                    <p>Fantasy</p>
+                </span>
+                <span>
+                    <h4>Description</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Consequuntur harum minima
+                        dolorum repudiandae! Nobis odio, distinctio
+                        minus quibusdam iusto dolorem odit laborum
+                        asperiores quod vero voluptate adipisci,
+                        provident, quis ipsa?</p>
+                </span>
+            </div>
+            <div class="tag">
+                <div class="rating">
+                    <p>Rating</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <a href="#" id="read-btn" onclick="closeView()">Read</a>
+            </div>
+        </div>
+    </div>
+    <!-- deatail container -->
+
+    <div class="user" id="user">
+        <div class="container">
+            <h1>Login</h1>
+            <form action="#">
+                <label for="#name">Username or email</label>
+                <input type="email" id="name" required>
+                <label for="#password">Password</label>
+                <input type="password" id="password" required>
+                <div class="option">
+                    <a href="javascript:void(0)" id="close-btn" onclick="closeForm()">Cancel</a>
+                    <input type="submit" value="Login" id="login-btn" />
+                </div>
+                <p>or</p>
+                <input type="submit" value="Sign Up" id="signup-btn" />
+            </form>
+        </div>
+    </div>
+
+    <!-- header -->
+    <header>
+        <div class="logo">
+            <a href="#">
+                <img src="./assets/img/img.svg" alt="">
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="#about">ABOUT</a>
+            <a href="#contact">CONTACT</a>
+            <form action="">
+                <input type="text" placeholder="Search...">
+            </form>
+            <a href="#" id="user-btn" onclick="openForm()">Login</a>
+        </div>
+    </header>
+    <!-- header -->
+
+    <!-- main -->
+    <main>
+
+        <!-- home -->
+        <section id="home"></section>
+        <!-- home -->
+
+        <!-- browser -->
+        <section id="browser">
+            <button class="accordion">Browse</button>
+            <div class="panel">
+                <h4>Browse by tab</h4>
+                <div class="row">
+                    <a href="#tp">Top Pick</a>
+                    <a href="#nh">New & Hot</a>
+                    <a href="#tr">Trendings</a>
+                    <a href="#ec">Editor's Choice</a>
+                </div>
+                <hr>
+                <h4>Browse by category</h4>
+                <div class="row">
+                    <a href="#">Action</a>
+                    <a href="#">Adventure</a>
+                    <a href="#">Animes</a>
+                    <a href="#">Biography</a>
+                </div>
+                <div class="row">
+                    <a href="#">Classics</a>
+                    <a href="#">Comics</a>
+                    <a href="#">Cooking</a>
+                    <a href="#">Crimes</a>
+                </div>
+                <div class="row">
+                    <a href="#">Fantasy</a>
+                    <a href="#">History</a>
+                    <a href="#">Horror</a>
+                    <a href="#">Mystery</a>
+                </div>
+                <div class="row">
+                    <a href="#">Romance</a>
+                    <a href="#">Science</a>
+                    <a href="#">Stories</a>
+                    <a href="#">Seif-help</a>
+                </div>
+            </div>
+        </section>
+        <!-- browser -->
+
+        <!-- content / Top Pick -->
+        <section class="contents" id="tp">
+            <h1>Top Pick For You</h1>
+            <div class="content-block">
+                <div class="content-container">
+                    <div class="row">
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_schoolgirl_glasses_242544_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_kitten_flower_141058_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_schoolgirl_glasses_242544_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_kitten_flower_141058_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_schoolgirl_glasses_242544_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_kitten_flower_141058_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_schoolgirl_glasses_242544_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_kitten_flower_141058_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_schoolgirl_glasses_242544_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_kitten_flower_141058_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_schoolgirl_glasses_242544_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_kitten_flower_141058_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- card / popular -->
+        <section class="card">
+            <div class="item-container">
+                <h1>Popular</h1>
+                <div class="card-container">
+                    <div class="container">
+                        <img src="https://images.wallpaperscraft.com/image/single/girl_scarf_snow_242841_240x320.jpg"
+                            alt="">
+                        <div class="description">
+                            <h1>Lorem Ipsum</h1>
+                            <div class="content">
+                                <span>
+                                    <h4>Author</h4>
+                                    <p>Johan</p>
+                                </span>
+                                <span>
+                                    <h4>Genres</h4>
+                                    <p>Fantasy</p>
+                                </span>
+                                <span>
+                                    <h4>Description</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Consequuntur harum minima
+                                        dolorum repudiandae!</p>
+                                </span>
+                            </div>
+                            <div class="tag">
+                                <div class="rating">
+                                    <p>Rating</p>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <a href="#" id="read-btn">Read</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="https://images.wallpaperscraft.com/image/single/girl_scarf_snow_242841_240x320.jpg"
+                            alt="">
+                        <div class="description">
+                            <h1>Lorem Ipsum</h1>
+                            <div class="content">
+                                <span>
+                                    <h4>Author</h4>
+                                    <p>Johan</p>
+                                </span>
+                                <span>
+                                    <h4>Genres</h4>
+                                    <p>Fantasy</p>
+                                </span>
+                                <span>
+                                    <h4>Description</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Consequuntur harum minima
+                                        dolorum repudiandae!
+                                    </p>
+                                </span>
+                            </div>
+                            <div class="tag">
+                                <div class="rating">
+                                    <p>Rating</p>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <a href="#" id="read-btn">Read</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- card -->
+
+        <!-- content / new and hot-->
+        <section class="contents" id="nh">
+            <h1>New & Hot</h1>
+            <div class="content-block">
+                <div class="content-container">
+                    <div class="row">
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_schoolgirl_glasses_242544_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_kitten_flower_141058_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_schoolgirl_glasses_242544_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_kitten_flower_141058_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_schoolgirl_glasses_242544_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_kitten_flower_141058_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_schoolgirl_glasses_242544_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_kitten_flower_141058_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_schoolgirl_glasses_242544_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_kitten_flower_141058_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_schoolgirl_glasses_242544_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_kitten_flower_141058_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- content -->
+
+        <!-- card / you will alse like -->
+        <section class="card">
+            <div class="item-container">
+                <h1>You Will Also Like</h1>
+                <div class="card-container">
+                    <div class="container">
+                        <img src="https://images.wallpaperscraft.com/image/single/girl_scarf_snow_242841_240x320.jpg"
+                            alt="">
+                        <div class="description">
+                            <h1>Lorem Ipsum</h1>
+                            <div class="content">
+                                <span>
+                                    <h4>Author</h4>
+                                    <p>Johan</p>
+                                </span>
+                                <span>
+                                    <h4>Genres</h4>
+                                    <p>Fantasy</p>
+                                </span>
+                                <span>
+                                    <h4>Description</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Consequuntur harum minima
+                                        dolorum repudiandae!
+                                    </p>
+                                </span>
+                            </div>
+                            <div class="tag">
+                                <div class="rating">
+                                    <p>Rating</p>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <a href="#" id="read-btn">Read</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="https://images.wallpaperscraft.com/image/single/girl_scarf_snow_242841_240x320.jpg"
+                            alt="">
+                        <div class="description">
+                            <h1>Lorem Ipsum</h1>
+                            <div class="content">
+                                <span>
+                                    <h4>Author</h4>
+                                    <p>Johan</p>
+                                </span>
+                                <span>
+                                    <h4>Genres</h4>
+                                    <p>Fantasy</p>
+                                </span>
+                                <span>
+                                    <h4>Description</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Consequuntur harum minima
+                                        dolorum repudiandae!
+                                    </p>
+                                </span>
+                            </div>
+                            <div class="tag">
+                                <div class="rating">
+                                    <p>Rating</p>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <a href="#" id="read-btn">Read</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- card -->
+
+        <!-- content / trendings -->
+        <section class="contents" id="tr">
+            <h1>Trendings</h1>
+            <div class="content-block">
+                <div class="content-container">
+                    <div class="row">
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_schoolgirl_glasses_242544_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_kitten_flower_141058_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_schoolgirl_glasses_242544_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_kitten_flower_141058_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_schoolgirl_glasses_242544_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_kitten_flower_141058_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_schoolgirl_glasses_242544_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_kitten_flower_141058_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_schoolgirl_glasses_242544_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_kitten_flower_141058_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_schoolgirl_glasses_242544_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_kitten_flower_141058_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- content -->
+
+        <!-- content / editor choice -->
+        <section class="contents" id="ec">
+            <h1>Editor's Choice</h1>
+            <div class="content-block">
+                <div class="content-container">
+                    <div class="row">
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_schoolgirl_glasses_242544_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_kitten_flower_141058_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_schoolgirl_glasses_242544_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_kitten_flower_141058_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_schoolgirl_glasses_242544_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_kitten_flower_141058_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_schoolgirl_glasses_242544_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_kitten_flower_141058_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_schoolgirl_glasses_242544_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_kitten_flower_141058_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_schoolgirl_glasses_242544_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_kitten_flower_141058_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="card-container">
+                                <img src="https://images.wallpaperscraft.com/image/single/girl_dress_clover_242528_1600x1200.jpg"
+                                    alt="">
+                                <div class="caption">
+                                    <h4>Lorem Ipsum</h4>
+                                    <a id="open" onclick="openView()">
+                                        see detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- content -->
+
+        <!-- about -->
+        <section class="about" id="about">
+            <img id="a" src="./assets/img/about.svg" alt="">
+            <img src="https://images.wallpaperscraft.com/image/single/office_design_desks_computers_graphics_80537_1600x1200.jpg"
+                alt="">
+            <div class="content">
+                <h1>About Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Deserunt facere adipisci ipsum exercitationem harum nihil
+                    voluptate culpa excepturi iusto, eveniet mollitia corporis
+                    facilis nobis iure ex aliquam, praesentium magnam expedita!
+                    Aperiam sed, sapiente explicabo odio repellendus voluptatibus
+                    quisquam sint eius consequuntur facilis perferendis molestiae autem,
+                    blanditiis architecto voluptatum libero iure non magnam dolorum labore
+                    laudantium nesciunt? Eum inventore laudantium, fugit illo veritatis
+                    vero officia dicta praesentium nulla velit, rerum provident voluptas,
+                    vitae itaque dolorem aut fuga natus temporibus consequuntur.
+                    Corporis ex voluptas, enim repudiandae quia voluptate aut minima delectus,
+                    veritatis excepturi nisi necessitatibus facere ipsa nesciunt tempora vero mollitia
+                    cupiditate quibusdam recusandae ratione! Maxime ad aut consequatur
+                    vitae ut, ex non, ducimus cumque aspernatur, odit dolor maiores quos eum hic.
+                </p>
+                <a href="https://thorshan.github.io/portfolio" target="_blank">
+                    learn more
+                </a>
+            </div>
+        </section>
+        <!-- about -->
+
+        <!-- contact -->
+        <section class="contact" id="contact">
+            <img src="./assets/img/contact.svg" alt="">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <form>
+                    <input type="email" name="" id="email" placeholder="email" />
+                    <textarea name="" id="txt" cols="30" rows="10" placeholder="message"></textarea>
+                    <input type="button" value="send" id="btn" />
+                    <form>
+            </div>
+        </section>
+        <!-- contact -->
+
+        <!-- main -->
+
+        <!-- footer -->
+        <footer>
+            <div class="ft">
+                <img src="../assets/img/img.svg" alt="">
+                <div class="social">
+                    <a href="#facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#reddit">
+                        <i class="fab fa-reddit"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="fb">
+                <p>&copy; 2021 Authoj</p>
+                <p>Designed by <a href="https://thorshan.github.io/portfolio/" target="_blank">Thor Shan</a></p>
+            </div>
+        </footer>
+        <!-- footer -->
+        <script src="./assets/script/static.js"></script>
+</body>
+
+</html>
